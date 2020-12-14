@@ -1,0 +1,5 @@
+include ':mysql-connector-java-8.0.21'
+include ':lib'
+include ':mysql-connector-java-8.0.21'
+rootProject.name='Proyecto Fin Grado Chat'
+include ':app'

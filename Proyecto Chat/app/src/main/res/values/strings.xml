@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Chapser</string>
+    <string name="signin">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="recu_rdame">Recuerdame</string>
+    <string name="connect">Conectado</string>
+    <string name="disconnect">Desconectado</string>
+    <string name="error_connect">Fallo al conectar</string>
+    <string name="message_welcome">Bienvenido al Chat</string>
+    <plurals name="message_participants">
+        <item quantity="one">Hay\'s %d participantes</item>
+        <item quantity="other">Hay %d participantes</item>
+    </plurals>
+
+    <string name="message_user_joined">%s Se ha unido</string>
+    <string name="message_user_left">%s Se ha ido</string>
+    <string name="user_action_typing">Esta Escribiendo</string>
+    <string name="prompt_message">Mensaje</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="actualizar_perfil">ACTUALIZAR PERFIL</string>
+    <string name="registrate_ahora">REGISTRATE AHORA</string>
+    <string name="cambiar_contrase_a">Cambiar Contraseña</string>
+    <string name="actualizar_imagen">ACTUALIZAR IMAGEN</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="chat_individual">CHAT INDIVIDUAL</string>
+    <string name="chat_de_grupo">CHAT DE GRUPO</string>
+    <string name="chat_general">CHAT GENERAL</string>
+    <string name="registrase">REGISTRASE</string>
+    <string name="pincha_aqui_para_insertar_tu_foto_de_perfil">PINCHA AQUI PARA INSERTAR TU FOTO DE PERFIL</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="introduce_el_nombre_de_usuario">INTRODUCE EL NOMBRE DE USUARIO</string>
+    <string name="username">USERNAME</string>
+    <string name="usuarios_conectados">USUARIOS CONECTADOS</string>
+    <string name="hablar">HABLAR</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <string name="ver_perfil">Ver Perfil</string>
+
+
+</resources>

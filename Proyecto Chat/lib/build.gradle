@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('mysql-connector-java-8.0.21.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

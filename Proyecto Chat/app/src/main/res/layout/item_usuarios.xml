@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/spacing">
+
+    /*
+    * ITEM PARA LA CREACION DEL FRAGMENT USUARIOS, SE INCLUYE LA IMAGEN, EL USERNAME
+    * Y UN BOTON PARA LA CREACION DE UNA CONVERSACION PRIVADA CON EL USUARIO
+    */
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="15dp"
+        >
+        <LinearLayout
+            android:background="@drawable/esquinas_redondeadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imagendeperfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/imagen"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    android:id="@+id/txtusername"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnhablar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/hablar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+

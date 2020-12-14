@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.CambiarPerfil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:elevation="4dp"
+                app:shape_roundRect_borderColor="@android:color/white"
+                app:shape_roundRect_borderWidth="2dp"
+                app:shape_roundRect_bottomLeftRadius="10dp"
+                app:shape_roundRect_bottomRightRadius="10dp"
+                app:shape_roundRect_topLeftRadius="10dp"
+                app:shape_roundRect_topRightRadius="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/circleimageback"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="15dp"
+                    android:onClick="atras"
+                    android:src="@drawable/ic_arrow_left"
+                    app:civ_border_color="#FF000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/actualizar_perfil"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/añadirimagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/actualizar_imagen"
+                    android:onClick="startPix"
+                    android:textAlignment="center"
+                    android:textColor="#FD0000"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_email_grey" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputCambioEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="Correo electronico"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_person_pin" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputCambiarUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre de usuario"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cambiarcontraseña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cambiar_contrase_a"
+                android:textStyle="bold"
+                android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/unacontraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_https_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputCambioPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/doscontraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_https_black_24dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputConfirmCambioPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirmar Contraseña"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnactualizarperfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="registrar"
+                android:text="@string/actualizar_perfil"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

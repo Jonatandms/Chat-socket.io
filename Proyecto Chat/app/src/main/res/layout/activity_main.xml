@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="192dp"
+            android:layout_margin="50dp"
+            android:src="@drawable/chat_benefits" />
+
+        <Button
+            android:id="@+id/iniciosesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#2196F3"
+            android:text="@string/iniciar_sesion"
+            android:onClick="botones"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/iniciosesiongoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp" />
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#FF9800"
+            android:text="@string/registrase"
+            android:onClick="botones"/>
+
+
+    </LinearLayout>
+
+
+</AbsoluteLayout>
